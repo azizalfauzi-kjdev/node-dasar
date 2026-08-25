@@ -13,10 +13,10 @@
   "license": "ISC",
   "author": "aziz alfa",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
