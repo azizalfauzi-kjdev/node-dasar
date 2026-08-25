@@ -1,13 +1,14 @@
-const mysql = require("mysql2");
+const mysql = require('mysql2');
 
-const connection = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "node_dasar",
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  password: '', // Default XAMPP
+  database: 'node_dasar',
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0,
+  queueLimit: 0
 });
 
-module.exports = connection.promise();
+// Gunakan promise agar bisa menggunakan async/await di controller
+module.exports = pool.promise();
