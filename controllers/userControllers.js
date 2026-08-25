@@ -50,7 +50,7 @@ exports.createUser = async (req, res) => {
 
   try {
     const [result] = await db.query(
-      "INSERT INTO users (nama, email) VALUES (?, ?)",
+      "INSERT INTO users (Name, Email) VALUES (?, ?)",
       [nama, email],
     );
 
@@ -58,7 +58,6 @@ exports.createUser = async (req, res) => {
       success: true,
       message: "User berhasil ditambahkan",
       data: {
-        id: result.insertId,
         nama,
         email,
       },
@@ -75,7 +74,7 @@ exports.updateUser = async (req, res) => {
 
   try {
     const [result] = await db.query(
-      "UPDATE users SET nama = ?, email = ? WHERE id = ?",
+      "UPDATE users SET Name = ?, Email = ? WHERE id = ?",
       [nama, email, id],
     );
 
