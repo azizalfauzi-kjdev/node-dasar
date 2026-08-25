@@ -1,4 +1,9 @@
-// file: app.js (Wajib menyertakan ekstensi file .js)
-import { tambah, kurang } from "./math.js";
+const db = require("../config/db");
 
-console.log(tambah(10, 2)); // Output: 12
+db.connect((err) => {
+  if (err) {
+    console.error("Error connecting to the database:", err);
+    return;
+  }
+  console.log("Connected to the database mysql xampp");
+});
