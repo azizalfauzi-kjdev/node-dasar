@@ -1,0 +1,20 @@
+{
+  "name": "node-dasar",
+  "version": "1.0.0",
+  "description": "node js dasar",
+  "homepage": "https://github.com/azizalfauzi-kjdev/node-dasar#readme",
+  "bugs": {
+    "url": "https://github.com/azizalfauzi-kjdev/node-dasar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizalfauzi-kjdev/node-dasar.git"
+  },
+  "license": "ISC",
+  "author": "aziz alfa",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
