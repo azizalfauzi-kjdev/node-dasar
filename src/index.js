@@ -1,3 +1,4 @@
-const math = require("./math");
+// file: app.js (Wajib menyertakan ekstensi file .js)
+import { tambah, kurang } from "./math.js";
 
-console.log(math.tambah(2, 3));
+console.log(tambah(10, 2)); // Output: 12

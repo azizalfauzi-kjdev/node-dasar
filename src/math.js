@@ -1,4 +1,3 @@
-const tambah = (a, b) => a + b;
-const kurang = (a, b) => a - b;
-
-module.exports = { tambah, kurang };
+// file: math.js
+export const tambah = (a, b) => a + b;
+export const kurang = (a, b) => a - b;
